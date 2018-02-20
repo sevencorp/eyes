@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% autoescape None %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ static_url('web/css/style.css') }}">
+{% end %}
+
+{% block main %}
+
 <p>Welcome guys</p>
-</body>
-</html>
+
+{% end %}
+

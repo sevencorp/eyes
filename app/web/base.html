@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <title>Eyes</title>
+      {% block css %} {% end %}
+
+  </head>
+
+  <body>
+
+    <!-- layout -->
+    <div class="fill">
+        {% block top %} {% end %}
+		{% block main %} {% end %}
+        {% block bottom %} {% end %}
+    </div>
+
+    <script src="{{ static_url('web/libs/jquery/jquery-3.2.1.min.js') }}" charset="UTF-8"></script>
+
+
+    <!-- logic -->
+    {% block import_js %} {% end %}
+
+	{% block tag %} {% end %}
+
+	{% block script_js %} {% end %}
+
+  </body>
+</html>
+
+
+
+
+
